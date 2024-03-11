@@ -2,7 +2,7 @@
 if (isNaN(process.argv[2])) {
   console.log('Missing size');
 } else {
-  const line = 'x';
+  const line = 'X';
   let i = 0;
 
   while (i < process.argv[2]) {
@@ -10,3 +10,4 @@ if (isNaN(process.argv[2])) {
     i += 1;
   }
 }
+
