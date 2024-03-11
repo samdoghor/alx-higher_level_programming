@@ -10,4 +10,3 @@ if (isNaN(process.argv[2])) {
     i += 1;
   }
 }
-
