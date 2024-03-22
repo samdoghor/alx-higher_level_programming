@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ 9-model_state_filter_a.py """
 
-
 import sys
 
 from sqlalchemy import create_engine

@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" Fetch All """
-
+""" 0x0F-python-object_relational_mapping """
 
 import sys
 

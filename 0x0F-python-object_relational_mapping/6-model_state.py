@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Start link class to table in database"""
+""" 0x0F-python-object_relational_mapping """
+
 import sys
 
 from sqlalchemy import create_engine

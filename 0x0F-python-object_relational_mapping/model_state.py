@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
-"""
-    this module contains a Base and State class
-"""
+""" 0x0F-python-object_relational_mapping """
 
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base

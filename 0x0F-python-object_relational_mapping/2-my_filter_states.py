@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Select and print all states that contains the passed args """
 
 from sys import argv
 

@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ 11-model_state_insert.py """
 
-
 import sys
 
 from sqlalchemy import create_engine

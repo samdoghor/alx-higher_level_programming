@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Select and print all states that starts with N """
 
 from sys import argv
 

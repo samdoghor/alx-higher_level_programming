@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""List all states"""
+""" 0x0F-python-object_relational_mapping """
+
 from sys import argv
 
 from sqlalchemy import create_engine
