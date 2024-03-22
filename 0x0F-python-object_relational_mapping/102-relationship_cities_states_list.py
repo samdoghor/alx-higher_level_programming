@@ -8,15 +8,17 @@ from sqlalchemy.orm import sessionmaker
 from relationship_city import City
 from relationship_state import State
 
-engine = create_engine(
-    'mysql+mysqldb://{}:{}@localhost/{}'
-    .format(argv[1], argv[2],
-            argv[3]), pool_pre_ping=True)
+if __name__ == "__main__":
 
-Session = sessionmaker(bind=engine)
-session = Session()
+    engine = create_engine(
+        'mysql+mysqldb://{}:{}@localhost/{}'
+        .format(argv[1], argv[2],
+                argv[3]), pool_pre_ping=True)
 
-for city, state in session.query(City, State)\
-    .join(State, State.id == City.state_id)\
-        .order_by(City.id):
-    print("{}: {} -> {}".format(city.id, city.name, state.name))
+    Session = sessionmaker(bind=engine)
+    session = Session()
+
+    for city, state in session.query(City, State)\
+        .join(State, State.id == City.state_id)\
+            .order_by(City.id):
+        print("{}: {} -> {}".format(city.id, city.name, state.name))
